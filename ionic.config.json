@@ -1,0 +1,7 @@
+{
+  "name": "hotel-stay-frontend",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
