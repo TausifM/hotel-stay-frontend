@@ -1,0 +1,104 @@
+.login-bg {
+  --background: linear-gradient(135deg, #7f5eff, #55c1ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass-card {
+  width: 90%;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 25px;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  animation: fadeIn 0.8s ease-in-out;
+  text-align: center;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.subtitle {
+  color: #f1f1f1;
+  margin-bottom: 20px;
+}
+
+.input-item {
+  --background: transparent;
+  --border-color: rgba(255, 255, 255, 0.4);
+  --color: #fff;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.password-toggle {
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.login-btn {
+  margin-top: 10px;
+  --background: #ffffff;
+  --color: #333;
+  font-weight: 600;
+}
+
+.forgot {
+  margin-top: 10px;
+  display: block;
+  color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.divider {
+  margin: 18px 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider span {
+  padding: 0 10px;
+  opacity: 0.8;
+}
+
+.social-login {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.social-login ion-button {
+  width: 48%;
+}
+
+.register-text {
+  color: #fff;
+}
+
+.register-text a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

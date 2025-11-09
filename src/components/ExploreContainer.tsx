@@ -1,4 +1,4 @@
-import './ExploreContainer.css';
+import './assets/styles/ExploreContainer.css';
 
 interface ContainerProps {
   name: string;

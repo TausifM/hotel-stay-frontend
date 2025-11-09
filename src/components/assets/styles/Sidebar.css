@@ -1,0 +1,28 @@
+.custom-menu {
+  /* --width: 100px; */
+  --side-max-width: 200px;
+  --background: #ffffff;
+  border-right: 1px solid #e6e6e6;
+}
+.menu-list ion-item {
+  --padding-start: 20px;
+  --inner-padding-end: 20px;
+  font-size: 16px;
+  --min-height: 48px;
+  transition: 0.2s ease-in-out;
+}
+
+.menu-list ion-item:hover {
+  background: #f4f6ff;
+  border-left: 4px solid var(--ion-color-primary);
+}
+
+ion-item ion-icon {
+  font-size: 20px;
+  color: var(--ion-color-primary);
+}
+
+.menu-list ion-item.ion-activated {
+  background: #e9efff;
+  border-left: 4px solid var(--ion-color-primary);
+}

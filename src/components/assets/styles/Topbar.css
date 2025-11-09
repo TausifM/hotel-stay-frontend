@@ -1,0 +1,138 @@
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+  backdrop-filter: blur(10px);
+  --background: rgba(255, 255, 255, 0.8);
+}
+
+body.dark .topbar {
+  --background: rgba(20, 20, 20, 0.9);
+}
+
+.logo {
+  font-weight: 700;
+  padding-left: 8px;
+}
+
+/* --- SEARCH BAR --- */
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 25px;
+  padding: 5px 10px;
+  width: 160px;
+  margin-left: 20px;
+  transition: width 0.3s ease;
+  border: 1px solid #ddd;
+}
+
+body.dark .search-box {
+  background: #222;
+  border: 1px solid #444;
+}
+
+.search-box.active {
+  width: 260px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: transparent;
+  font-size: 14px;
+}
+
+.search-icon {
+  font-size: 18px;
+  margin-right: 6px;
+}
+
+/* --- NAV LINKS --- */
+.nav-links {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  gap: 18px;
+}
+
+.nav-links a,
+.drop-btn {
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* --- DROPDOWN STYLE --- */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  background: white;
+  min-width: 150px;
+  border-radius: 8px;
+  padding: 10px 0;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition: all 0.25s ease;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+  z-index:  99999 !important;
+}
+
+body.dark .dropdown-menu {
+  background: #222;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+  background: rgba(0,0,0,0.07);
+}
+
+body.dark .dropdown-menu a:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* USER MENU (align right) */
+.dropdown-menu.right {
+  right: 0;
+  left: auto;
+}
+
+/* --- RIGHT ACTION ICONS --- */
+.action-icons ion-icon {
+  font-size: 22px;
+}
+
+/* --- MOBILE --- */
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+  .search-box {
+    display: none;
+  }
+  .desktop-hide {
+    display: block;
+  }
+}

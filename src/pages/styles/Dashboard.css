@@ -1,0 +1,36 @@
+/* hero banner */
+.hero {
+  background: linear-gradient(135deg,#4c7dff 0%, #7ba7ff 60%);
+  color: white;
+  padding: 30px 20px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin-bottom: 18px;
+  box-shadow: 0 8px 30px rgba(59,130,246,0.12);
+}
+.hero-inner { max-width: 1180px; margin: 0 auto; }
+.hero h1 { margin: 0; font-size: 2rem; }
+.hero p { margin-top: 6px; opacity: 0.95; }
+
+/* grid spacing */
+.dashboard-grid { max-width: 1180px; margin: 16px auto; }
+
+/* chart card styling */
+.chart-card { border-radius: 12px; padding: 12px 16px; box-shadow: 0 18px 36px rgba(16,24,40,0.06); }
+.chart-header h3 { margin: 0; font-size: 1.5rem; }
+.chart-header p { margin: 0; color: #64748b; }
+
+/* 3D card mock */
+.card-3d { border-radius: 14px; padding: 24px; display:flex; align-items:center; justify-content:center; min-height: 220px; background:linear-gradient(135deg,#f3f7ff,#eef6ff); box-shadow: 0 12px 30px rgba(35,43,77,0.05); }
+.credit-card { width: 100%; max-width: 300px; height: 160px; border-radius: 12px; background: linear-gradient(135deg,#03203f 0%, #3b82f6 100%); color: white; padding: 16px; position: relative; box-shadow: 0 12px 36px rgba(2,6,23,0.24); }
+.credit-card .chip { width: 48px; height:34px; background: rgba(255,255,255,0.25); border-radius:6px; margin-bottom:18px; }
+.card-number { font-weight:700; font-size:1.1rem; letter-spacing: 2px; margin-top:8px; }
+.card-holder { font-size:0.9rem; margin-top:18px; opacity:0.95; }
+.card-exp { position:absolute; right: 16px; bottom: 16px; font-weight:700; }
+
+/* responsive tweaks */
+@media (max-width: 991px) {
+  #main-content { margin-left: 0 !important; }
+  .hope-sidebar { transform: translateX(-100%); } /* keep collapsed until menu button opens */
+  .search-wrap { max-width: 420px; }
+}
